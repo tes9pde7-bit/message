@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>心情抽一句</title>
+<style>
+    body {
+        font-family: "Noto Sans TC", sans-serif;
+        background: #f7f3ef;
+        text-align: center;
+        padding: 50px;
+    }
+    h1 {
+        color: #5c6b73;
+    }
+    #quote {
+        margin: 40px auto;
+        padding: 30px;
+        width: 60%;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        font-size: 20px;
+        color: #333;
+        min-height: 80px;
+    }
+    button {
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 25px;
+        background-color: #a8dadc;
+        color: #fff;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #74c0c3;
+    }
+</style>
+</head>
+<body>
+
+<h1>🌿 抽一句給今天的你</h1>
+
+<div id="quote">點擊下方按鈕，看看今天的訊息</div>
+
+<button onclick="drawQuote()">抽一句</button>
+
+<script>
+const quotes = [
+"今天的你，已經很努力了。",
+"情緒沒有對錯，它只是想被看見。",
+"慢一點也沒關係，你還在前進。",
+"有些話說不出口，但可以被理解。",
+"低潮不是結束，是在醞釀新的力量。",
+"你比自己想像的更有韌性。",
+"有人正在默默關心你。",
+"不用完美，做自己就很好。",
+"撐不住的時候，可以停一下。",
+"情緒會來，也會慢慢離開。",
+"你不是一個人。",
+"今天的難過，會慢慢變輕。",
+"每個人都有不順的時候。",
+"允許自己不那麼堅強。",
+"你的感受很重要。",
+"小小的進步，也值得被肯定。",
+"今天撐過來了，很不容易。",
+"你值得被好好對待。",
+"迷惘也是成長的一部分。",
+"願你對自己溫柔一點。",
+"你不是問題本身。",
+"有些事情，不是你的錯。",
+"今天的你，夠好了。",
+"就算不完美，也值得被愛。",
+"累了，就休息一下。",
+"明天會是新的開始。",
+"你正在慢慢變強。",
+"不用急著找到答案。",
+"不必總是逞強。",
+"今天先過好今天。",
+"不順利的日子，也會過去。",
+"你可以重新開始。",
+"小小的快樂，也很重要。",
+"不安的時候，深呼吸一下。",
+"事情不會永遠這樣。",
+"願你被溫柔以待。",
+"今天也辛苦你了。",
+"你正在走向更好的自己。",
+"你可以選擇善待自己。",
+"允許自己慢慢好起來。",
+"你不是孤單的。",
+"世界沒有你想的那麼冷。",
+"你值得一點點光。",
+"今天先好好呼吸。",
+"你正在走自己的路。",
+"生活不會一直難。",
+"你可以慢慢相信自己。",
+"你值得一點休息。",
+"今天不順，也沒關係。",
+"你很重要。"
+];
+
+function drawQuote() {
+    const random = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").innerText = quotes[random];
+}
+</script>
+
+</body>
+</html>
